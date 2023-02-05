@@ -5,4 +5,6 @@ export const HeaderStyled = styled.div`
   padding: 12px 14px;
   width: 100%;
   background-color: gray;
+  color: white;
+  font-weight: 700;
 `;

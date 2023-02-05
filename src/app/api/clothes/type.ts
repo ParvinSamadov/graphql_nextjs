@@ -9,7 +9,7 @@ export type Collection = {
   title: string;
   items: Item;
 };
-type Item = {
+export type Item = {
   id: string;
   name: string;
   price: number;

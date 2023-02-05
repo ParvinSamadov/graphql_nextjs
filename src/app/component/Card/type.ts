@@ -1,4 +1,5 @@
+import { Item } from "@/app/api/clothes/type";
+
 export interface IProps {
-  img: string;
-  title: string;
+  item: Item;
 }

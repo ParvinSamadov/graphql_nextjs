@@ -123,3 +123,17 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+.card-top {
+  height: 18.75rem;
+}
+
+.card-bottom {
+  border: 1px solid gray;
+}
+
+.h-for_img {
+  height: 18.75rem;
+  object-fit: cover;
+  object-position: top;
+}
