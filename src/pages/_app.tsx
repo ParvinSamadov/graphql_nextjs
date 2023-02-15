@@ -7,19 +7,22 @@ import "bootstrap/dist/css/bootstrap.css";
 import "@/app/style/_fonts.css";
 import "@/app/style/index.css";
 
-const client = new ApolloClient({
-  uri: process.env.NEXT_PUBLIC_BASE_URL,
-  cache: new InMemoryCache(),
-});
+// for clientside and save in cache via Apollo
+// const client = new ApolloClient({
+//   uri: process.env.NEXT_PUBLIC_BASE_URL,
+//   cache: new InMemoryCache(),
+// });
 
 function App({ Component, pageProps }: AppProps) {
   return (
-    <ApolloProvider client={client}>
+    // <ApolloProvider client={client}>
+    <>
       <Header />
       <Main>
         <Component {...pageProps} />
       </Main>
-    </ApolloProvider>
+    </>
+    // </ApolloProvider>
   );
 }
 
